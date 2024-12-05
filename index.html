@@ -1,0 +1,119 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>portfolio</title>
+				<script src="main.js"></script>
+				<meta name="viewport" content="width = device-width,initial-scale = 1.0">
+				<link rel = "stylesheet" href = "style.css">
+				<link rel="preconnect" href="https://fonts.googleapis.com">
+				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+				<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+	</head>
+    </head>
+    <body>
+			<header>
+				<div class="wrapper">
+					<div class="logo">
+						<h1>Vijay <span class="span">Developer</span></h1>
+					</div>
+					<div class="navigation">
+						<ul>
+							<a href = "#" class = "home">home</a>
+							<a href= "#" class="education">education</a>
+							<a href="#" class="skills">skills</a>
+							<a href="#" class="services">services</a>
+						</ul>
+
+							<input class = "search" type = "searchbox" placeholder = "search">
+						
+					</div>
+					<div class="login-button">
+					<div>
+					<buttton onclick="loginClose(1)" class="login-butt">Login</button>
+					</div>
+					<div class="menubar"><ion-icon onclick="closeOpen(1)" name="reorder-four" ></ion-icon></div>
+				    </div>
+						
+				</div>
+			</header>
+			<div class="section">	
+				
+		<div id = "close" class="open-close">
+			<span class="close">
+				<ion-icon 
+				
+				onclick="
+				closeOpen(0)
+				"
+				
+				name="close-circle"></ion-icon>
+			</span>
+
+			<span class="home">
+				<ion-icon id = "home" title = "home" name="home"></ion-icon>
+				<a href = "#">Home</a>
+			</span>
+			
+			<span class="education">
+				<ion-icon title = "book" name="library-outline"></ion-icon>
+				<a href = "#">education</a>
+			</span>
+			
+			<span class="services">
+				<ion-icon title = "services" name="server"></ion-icon>
+				<a href = "#">services</a>
+			</span>
+			
+			<span class="skill">
+				<ion-icon title = "login" name="construct-outline"></ion-icon>
+				<a href = "#">skills</a>
+			</span>
+
+			<span class="menu-login">
+				<ion-icon title = "login" name="person-circle"></ion-icon>
+				<button onclick = "newFunc(1)">login</button>
+			</span>
+			
+		</div>
+				
+		<div id = "login" class="login">
+			<form>
+				<ion-icon onclick = "loginClose(0)" name = "close-circle"></ion-icon>
+				<h1 class = "heading">Login </h1>
+				<input class = "user"id = "user" type = "search" placeholder="Username">
+				
+				<input class = "pass"id = "pass" type = "password" placeholder="Password">
+		
+				<div class="recovery">
+				<div class="remember-me">
+					<input class = "check" type = "checkbox" id = "remember"> 
+					<label for="remember">Remember me</label>
+				</div>
+				
+				<a href="#">Forgot password ?</a>
+				</div>
+				<div class="submit"><input type="submit"></div>
+		
+				<p>Don't you have an account ? <a href="#">sign up</a></p>
+
+			</form>
+		</div>	
+				<div class="container">
+			  <img src="logo.jpg" alt="logo" class="image-container">
+			  </div>
+				<div class="text">
+					<h2>It's me</h2>
+					<h1><span>Vijay </span>I am </h1>
+					<h2>Software developer</h2>
+					<p>
+						I’m a passionate software developer with a knack for turning ideas into elegant code. Whether it’s building web apps, optimizing databases, or solving complex puzzles, I thrive on creating meaningful solutions. Let’s build something awesome together! 
+					</p>
+					<a class="hire-me">Hire me</a>
+					<img class = "bg"src="bg2.jpg" alt="logo">
+				</div>
+			
+			</div>
+			<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
