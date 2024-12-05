@@ -527,6 +527,11 @@ a:active{
        
     }
 
+    .openclose
+    {
+        width:100%;
+    }
+
 }
 
 @media(max-width:492px)
